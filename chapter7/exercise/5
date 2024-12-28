@@ -1,0 +1,1 @@
+0b10000001 is not a legal way to write number 65 because it is a octal number and if we convert octal to decimal, we do x * 8^n where x is digit and n is index of x from left.

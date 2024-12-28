@@ -1,0 +1,4 @@
+Character Escape Sequence to Hexadecimal Sequence
+\b - \x08
+\t - \x09
+\n - \x0a
