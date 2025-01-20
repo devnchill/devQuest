@@ -1,0 +1,9 @@
+i = type int
+j = type long
+k = type unsigned int
+
+expression = i + (int) j * k
+
+so first j is explicitly typecast from long to int . int j * k returns unsigned int . finally addition with c returns type unsigned int.
+
+

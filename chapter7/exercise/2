@@ -1,0 +1,3 @@
+0790 is not a legal constant because octal numbers only consist of numbers ranging from 0 to 7.
+100_00 is not a legal constant because it has _
+remaining are floating constant

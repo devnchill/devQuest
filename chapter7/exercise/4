@@ -1,0 +1,1 @@
+printf(c) is illegal because printf is used to print strings. In this case c is a character and not a string.

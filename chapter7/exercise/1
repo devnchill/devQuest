@@ -1,0 +1,6 @@
+/*
+ * Give the decimal value of each of the following integer constants
+ * 1. 077 = 0 * 8^2 + 7*8^1 + 7*8^0 = 63
+ * 2. 0x77 = same step just replace 8 with 16
+ * 3.0xABC = hexadecimal as well
+ * */

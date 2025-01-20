@@ -1,0 +1,4 @@
+given i and j are of type int. 
+i/j + 'a' = int + char = int
+here char gets implicitly typecase to int
+
