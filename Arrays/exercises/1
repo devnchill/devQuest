@@ -1,0 +1,1 @@
+sizsof(t) is considered inferior type because in this case we are assuming that array element will of of type t which isn't guaranted here. Rather all element of an array have same type so using typeof(arr[0]) makes sure that we are able to find out the exact lenght as there is not chance that type would be different here.
