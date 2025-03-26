@@ -1,2 +1,1 @@
-# cQuest
-Journey through learning c programming . Will mostly have exercises , projects and practice code snippets
+A repo for my coding notes and practice.
