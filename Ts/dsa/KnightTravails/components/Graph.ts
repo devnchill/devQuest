@@ -19,7 +19,9 @@ class Graph {
     while (queue.length > 0) {
       const [current, path] = queue.shift()!;
       if (JSON.stringify(current) === JSON.stringify(this.dest)) {
-        console.log(`You made it in ${path.length} moves! Here's your path:`);
+        console.log(
+          `You made it in ${path.length - 1} moves! Here's your path:`,
+        );
         return path;
       }
       const validMoves = Moves.getMoves(current);
