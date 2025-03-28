@@ -1,0 +1,9 @@
+code -> compiler -> executable
+
+#### Structure 
+
+package main -> lets compiler know that we want to run this as a standalone program rather than as a library 
+
+import "fmt" -> fmt stands for formatting input output , this allows to use fmt.Println which helps to print things to console
+
+func main -> serves as entry point for the program
