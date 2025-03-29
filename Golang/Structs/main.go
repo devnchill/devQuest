@@ -17,3 +17,8 @@ func canSendMessage(mToSend messageToSend) bool {
 		mToSend.recipient.name != "" &&
 		mToSend.recipient.number != 0
 }
+
+type sender struct {
+	user
+	rateLimit int
+}
