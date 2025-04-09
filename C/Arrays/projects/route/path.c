@@ -1,6 +1,6 @@
 #include "path.h"
-#include <cstdlib>
 #include <stdio.h>
+#include <stdlib.h>
 int main(void) {
   char map[10][10];
   populate_array(map);
