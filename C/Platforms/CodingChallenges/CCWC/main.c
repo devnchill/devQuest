@@ -21,6 +21,21 @@ long read_size_in_bytes(const char *filename) {
   return len;
 }
 
+long count_words(const char *filename) {
+  FILE *file = fopen(filename, "r");
+  if (file == NULL) {
+    perror("Error Opening file");
+    return -1;
+  }
+  int count = 0;
+  int ch;
+  while ((ch = fgetc(file)) != EOF) {
+    count++;
+  }
+  fclose(file);
+  return count;
+}
+
 int main(int argc, char *argv[]) {
 
   if (argc == 2 && strcmp(argv[1], "--help") == 0) {
@@ -34,7 +49,14 @@ int main(int argc, char *argv[]) {
   }
 
   if (argc == 2) {
-    // Default Option;
+    printf("Counting bytes in file: %s\n", argv[2]);
+    long file_size = read_size_in_bytes(argv[2]);
+    if (file_size != -1) {
+      printf("File size: %ld bytes\n", file_size);
+    }
+    printf("Counting words in file: %s\n", argv[2]);
+    int no_of_words = count_words(argv[2]);
+    printf("%d words found in file %s", no_of_words, argv[2]);
   }
 
   if (argc < 3) {
@@ -53,7 +75,8 @@ int main(int argc, char *argv[]) {
 
   else if (strcmp(argv[1], "-w") == 0) {
     printf("Counting words in file: %s\n", argv[2]);
-
+    int no_of_words = count_words(argv[2]);
+    printf("%d words found in file %s", no_of_words, argv[2]);
   }
 
   else {
