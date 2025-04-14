@@ -1,35 +1,22 @@
-//{ Driver Code Starts
-// Initial Template for C++
-
-// {Driver Code Starts
-#include <bits/stdc++.h>
-using namespace std;
-
-// } Driver Code Ends
-
-// User function Template for C++
-
+#include <iostream>
 class Solution {
 public:
-  int dataTypeSize(string str) {
-    // your code here
+  void studentGrade(int marks) {
+    if (marks >= 90) {
+      std::cout << "Grade A";
+    } else if (marks >= 70) {
+      std::cout << "Grade B";
+    } else if (marks >= 50) {
+      std::cout << "Grade C";
+    } else if (marks >= 35) {
+      std::cout << "Grade D";
+    } else {
+      std::cout << "Fail";
+    }
   }
 };
-
-//{ Driver Code Starts.
-
-int main() {
-  int t;
-  cin >> t;
-  while (t--) {
-    string str;
-    cin >> str;
-    Solution ob;
-    cout << ob.dataTypeSize(str);
-    cout << "\n";
-    cout << "~" << endl;
-  }
+int main(int argc, char *argv[]) {
+  Solution s;
+  s.studentGrade(88);
   return 0;
 }
-
-// } Driver Code Ends
