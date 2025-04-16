@@ -12,7 +12,7 @@ type email struct {
 func checkEmailAge(emails [3]email) [3]bool {
 	isOldChan := make(chan bool)
 
-	sendIsOld(isOldChan, emails)
+	go sendIsOld(isOldChan, emails)
 
 	isOld := [3]bool{}
 	isOld[0] = <-isOldChan
