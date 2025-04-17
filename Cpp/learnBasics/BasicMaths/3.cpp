@@ -1,3 +1,4 @@
+#include <climits>
 #include <cstdlib>
 #include <iostream>
 using namespace std;
@@ -10,6 +11,9 @@ public:
     int reversed_number = 0;
     while (n > 0) {
       last_digit = n % 10;
+      if (reversed_number > (INT_MAX - last_digit) / 10) {
+        return false;
+      }
       reversed_number = reversed_number * 10 + last_digit;
       n = n / 10;
     }
