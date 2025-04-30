@@ -30,7 +30,8 @@ bin/
 vendor/
 
 # Rust
-/target/
+target/
+debug/
 Cargo.lock
 
 # Haskell (stack and cabal)
