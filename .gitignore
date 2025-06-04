@@ -1,34 +1,73 @@
-
-# Ignore everything by default
-*
-
-# Allow only your source folders
-!C/
-!Cpp/
-!Js/
-!Ts/
-!Rust/
-!Golang/
-!Assembly/
-!Css/
-
-# Allow files with specific extensions
-!*.c
-!*.cpp
-!*.py
-!*.rs
-!*.ts
-!*.js
-!*.s
-!*.asm
-!*.go
-!*.html
-!*.css
-
-# Explicitly ignore common build/dependency folders (defensive)
-node_modules/
+# General
 dist/
 build/
-.env
+node_modules/
+__pycache__/
+venv/
 *.log
+*.tmp
+*.swp
+*.DS_Store
+*.bak
+
+# C/C++
+*.out
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dSYM/
+*.obj
+*.lib
+
+# Go
+bin/
+*.test
+*.exe
+*.mod
+*.sum
+vendor/
+
+# Rust
+target/
+debug/
+Cargo.lock
+
+# Haskell (stack and cabal)
+/dist/
+.stack-work/
+*.hi
+*.o
+*.hsenv
+.cabal-sandbox/
+cabal.project.local
+*.prof
+*.aux
+*.hp
+*.eventlog
+*.dump-hi
+*.dump-raw
+*.tix
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+/.idea/
+
+# JavaScript/TypeScript
+*.tsbuildinfo
+.eslintcache
+coverage/
+jspm_packages/
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
